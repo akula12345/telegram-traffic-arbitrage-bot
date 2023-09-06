@@ -39,7 +39,7 @@ async def panel(message: types.Message):
 	if message.from_user.id == owner:
 		await message.answer('Ласкаво просимо в панель адміністратора🪄', reply_markup=keyboards.panel_kb)
 
-# Добавление кода с помощью генерации
+# Заміна вітального повідомлення
 @dp.message_handler(Text(equals=['📨Замінити вітальне повідомлення📨']))
 async def add_code(message: types.message):
 	if message.from_user.id == owner:
